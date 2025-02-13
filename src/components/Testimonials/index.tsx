@@ -8,8 +8,8 @@ const testimonialData: Testimonial[] = [
     name: "Yanneck Bruder",
     designation: "Founder @ Uservii",
     content:
-      "Excellent collaboration!! Eduard went overboard to sattisfy all requirements and beyond. He was always on time with deliveries and assisted all the way until the app went live. He assisted me in overcoming all challenges with my application publishing. Very knowledgable expert and can provide guidance for every problem. Thank you Eduard. Keep up the great work! We will soon be collaborating again.",
-    image: "/images/testimonials/author-01.png",
+      "A reliable partner who always supports us when we need help. Thank you very much.",
+    image: "/images/testimonials/author-01.jpeg",
     star: 5,
   },
   {
@@ -17,7 +17,7 @@ const testimonialData: Testimonial[] = [
     name: "Steven Brändle",
     designation: "Founder @ Pensionflow",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "Die Zusammenarbeit mit Eduard und dem Team ist wirklich super und er ist sehr kundenorientiert. Auch seine unkomplizierte Art sowie seine Art finde ich super. Ich arbeite sehr gerne mit Eduard zusammen, da die Kommunikation wirklich gut ist und ich auch bei weiteren Anliegen Eduard immer eine optimale Lösung sucht. Ich kann GEN GRAPHIC wirklich empfehlen und freue mich auf die weiteren Projekte.",
     image: "/images/testimonials/author-02.png",
     star: 5,
   },
