@@ -29,10 +29,10 @@ export default function Home() {
       <About />
       <CallToAction />
       <Pricing />
-      {/*<Testimonials />*/}
+      <Testimonials />
       <Faq />
       {/*<Team />*/}
-      {/*<HomeBlogSection posts={posts} />*/}
+      <HomeBlogSection posts={posts} />
       <Contact />
       <Clients />
     </main>

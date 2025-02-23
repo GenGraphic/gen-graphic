@@ -15,10 +15,10 @@ const testimonialData: Testimonial[] = [
   {
     id: 2,
     name: "Steven Brändle",
-    designation: "Founder @ Pensionflow",
+    designation: "Founder @ Pen&Filler",
     content:
       "Die Zusammenarbeit mit Eduard und dem Team ist wirklich super und er ist sehr kundenorientiert. Auch seine unkomplizierte Art sowie seine Art finde ich super. Ich arbeite sehr gerne mit Eduard zusammen, da die Kommunikation wirklich gut ist und ich auch bei weiteren Anliegen Eduard immer eine optimale Lösung sucht. Ich kann GEN GRAPHIC wirklich empfehlen und freue mich auf die weiteren Projekte.",
-    image: "/images/testimonials/author-02.png",
+    image: "/images/testimonials/steven.png",
     star: 5,
   },
   {
@@ -27,7 +27,7 @@ const testimonialData: Testimonial[] = [
     designation: "Founder @ Pensionflow",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/author-03.png",
+    image: "/images/testimonials/pf.png",
     star: 5,
   },
 ];

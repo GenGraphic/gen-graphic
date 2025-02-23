@@ -29,7 +29,7 @@ const Pricing = () => {
       <div className="container">
         <div className="mb-[60px]">
           <SectionTitle
-            subtitle="Pricing Tables"
+            subtitle=""
             title="Dedicted Cloud Solution"
             paragraph="A dedicated server gives you isolated performance, enhanced security, and full control. This is perfect for larger projects or clients needing premium reliability."
             center
@@ -46,7 +46,7 @@ const Pricing = () => {
       <div className="container">
         <div className="mb-[60px]">
           <SectionTitle
-            subtitle="Pricing Tables"
+            subtitle=""
             title="Web Hosting"
             paragraph="Our web hosting solutions are designed for speed, security, and scalability. Whether you're launching a personal website or managing a complex application, we offer dedicated servers with unmatched performance, full control, and top-tier security to ensure your projects run smoothly and reliably."
             center

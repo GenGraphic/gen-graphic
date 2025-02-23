@@ -91,7 +91,7 @@ export default async function Post({ params }: Props) {
               >
                 <Image
                   src={post.coverImage}
-                  alt="image"
+                  alt={post.title}
                   width={1288}
                   height={500}
                   className="h-full w-full object-cover object-center"
@@ -102,7 +102,7 @@ export default async function Post({ params }: Props) {
                       <div className="mr-4 h-10 w-10 overflow-hidden rounded-full">
                         <Image
                           src={post.authorImage}
-                          alt="image"
+                          alt={post.author}
                           className="w-full"
                           width={40}
                           height={40}
@@ -189,14 +189,18 @@ export default async function Post({ params }: Props) {
                         </h2>
                         <span className="mb-10 inline-block h-[2px] w-20 bg-primary"></span>
                       </div>
-                      {posts.slice(0, 3).map((blog, i) => (
-                        <PopularArticle
-                          key={i}
-                          image={blog?.coverImage}
-                          title={blog?.title.slice(0, 30)}
-                          name={blog?.author}
-                        />
-                      ))}
+                      {posts
+                        .filter(item => item.title !== post.title) // Exclude the current blog
+                        .slice(0, 3) // Take the first 3 blogs after filtering
+                        .map((blog, i) => (
+                          <PopularArticle
+                            key={i}
+                            image={blog?.coverImage}
+                            title={blog?.title.slice(0, 30)}
+                            name={blog?.author}
+                            slug={blog?.slug}
+                          />
+                        ))}
                     </div>
 
                     <div

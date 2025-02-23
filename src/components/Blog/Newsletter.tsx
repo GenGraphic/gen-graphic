@@ -5,10 +5,10 @@ const Newsletter = () => {
       data-wow-delay=".1s"
     >
       <h3 className="mb-[6px] text-[28px] font-semibold leading-[40px] text-white">
-        Join our newsletter!
+        Contact us!
       </h3>
       <p className="mb-5 text-base text-white">
-        Enter your email to receive our latest newsletter.
+        Enter your email and we'll get bayk to you.
       </p>
       <form>
         <input
@@ -18,12 +18,12 @@ const Newsletter = () => {
         />
         <input
           type="submit"
-          value="Subscribe Now"
+          value="Send now"
           className="mb-4 h-[50px] w-full cursor-pointer rounded-md bg-secondary text-center text-sm font-medium text-white transition duration-300 ease-in-out hover:bg-[#0BB489] hover:bg-opacity-90"
         />
       </form>
       <p className="text-sm font-medium text-white">
-        Don&#39;t worry, we don&#39;t spam
+        Don&#39;t worry, we don&#39;t save your address
       </p>
 
       <div>
