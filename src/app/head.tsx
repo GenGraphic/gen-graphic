@@ -2,10 +2,10 @@ export default function Head() {
   return (
     <>
       <title>
-      Play Next.js - SaaS Starter Kit and Boilerplate for Next.js
+      Expert IT Consulting & Web Development Solutions for Businesses
       </title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <meta name="description" content="This SaaS Boilerplate and Starter Kit for Next.js is designed specifically for SaaS startups. It's a free resource complete with all the necessary integrations, pages, and components you require to build and launch a comprehensive SaaS website with robust features." />
+      <meta name="description" content="At GenGraphic, we specialize in custom web and mobile app development, cloud hosting services, and rapid backend solutions with Appwrite. Our tailored solutions help businesses build scalable applications and grow their digital presence with ease." />
       <link rel="icon" href="/images/favicon.ico" />
     </>
   );
