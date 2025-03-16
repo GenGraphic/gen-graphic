@@ -55,7 +55,7 @@ const Pricing = () => {
 
         <div className="-mx-4 flex flex-wrap justify-center">
           {webHosting.map((product, i) => (
-            <PricingBox key={i} product={product} />
+            <PricingBox key={product.id} product={product} />
           ))}
         </div>
       </div>

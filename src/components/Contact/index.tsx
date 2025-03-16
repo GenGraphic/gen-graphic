@@ -1,10 +1,51 @@
 "use client"
 
+import { useState } from "react";
+import { functions, SEND_EMAIL_FUCNTION_ID } from "../../../appwriteConfig";
+
 const Contact = () => {
+  const [name,setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const onSubmit = () => {
+  const onSubmit = async (e: React.FormEvent) => {
+    e.preventDefault(); // Prevent page reload on form submission
+    setLoading(true);
 
-  }
+    try {
+      const response = await functions.createExecution(
+        SEND_EMAIL_FUCNTION_ID,
+        JSON.stringify({
+          email,
+          name,
+          phone,
+          message
+        })
+      );
+
+      if(response.responseStatusCode !== 200) {
+        alert("There was an error sending the email. Please make sure you have entered a valid Email address.");
+        console.log(response);
+      };
+
+      alert("Thanks! We have received your E-mail and you will be contacted very soon.");
+
+      setEmail("");
+      setMessage("");
+      setName("");
+      setPhone("");
+      
+    } catch (error: any) {
+      console.error("Error sending the email:", error);
+      alert(
+        "Error sending the Email. Please make sure you entered a valid E-mail address."
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <section id="contact" className="relative py-20 md:py-[120px]">
@@ -88,6 +129,8 @@ const Contact = () => {
                     Full Name*
                   </label>
                   <input
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                     type="text"
                     name="fullName"
                     placeholder="Adam Gelius"
@@ -102,6 +145,8 @@ const Contact = () => {
                     Email*
                   </label>
                   <input
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     type="email"
                     name="email"
                     placeholder="example@yourmail.com"
@@ -116,6 +161,8 @@ const Contact = () => {
                     Phone*
                   </label>
                   <input
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                     type="text"
                     name="phone"
                     placeholder="+885 1254 5211 552"
@@ -130,6 +177,8 @@ const Contact = () => {
                     Message*
                   </label>
                   <textarea
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     name="message"
                     rows={1}
                     placeholder="type your message here"
@@ -141,7 +190,7 @@ const Contact = () => {
                     type="submit"
                     className="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-primary/90"
                   >
-                    Send
+                    {loading ? "Sending..." : "Send"}
                   </button>
                 </div>
               </form>

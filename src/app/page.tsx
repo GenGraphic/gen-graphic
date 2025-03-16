@@ -12,6 +12,7 @@ import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
+import "../../appwriteConfig";
 
 export const metadata: Metadata = {
   title: "GenGraphic | Consulting, Development, Hosting",

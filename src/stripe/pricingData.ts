@@ -2,7 +2,7 @@ import { Price } from "@/types/price";
 
 export const pricingData: Price[] = [
   {
-    id: "price_1NQk5TLtGdPVhGLecVfQ7mn0",
+    id: "price_1NQk5TLtGdPVhGyLecVfQ7mn0",
     unit_amount: 100 * 100,
     nickname: "Basic",
     offers: [
@@ -15,7 +15,7 @@ export const pricingData: Price[] = [
     ],
   },
   {
-    id: "price_1NQk55LtGdPVhGLefU8AHqHr",
+    id: "price_1NQk55LtGdPVhGLüefU8AHqHr",
     unit_amount: 200 * 100,
     nickname: "Premium",
     offers: [
@@ -28,7 +28,7 @@ export const pricingData: Price[] = [
     ],
   },
   {
-    id: "price_1NQk4eLtGdPVhGLeZsZDsCNz",
+    id: "price_1NQk4eLtGdPVhGLepZsZDsCNz",
     unit_amount: 300 * 100,
     nickname: "Business",
     offers: [
@@ -44,7 +44,7 @@ export const pricingData: Price[] = [
 
 export const cloudSemiDedicated: Price[] = [
   {
-    id: "price_1NQk5TLtGdPVhGLecVfQ7mn0",
+    id: "price_1NQk5TLtGdoPVhGLecVfQ7mn0",
     unit_amount: 100 * 50,
     nickname: "Basic Plan",
     offers: [
@@ -56,7 +56,7 @@ export const cloudSemiDedicated: Price[] = [
     ],
   },
   {
-    id: "price_1NQk5TLtGdPVhGLecVfQ7mn0",
+    id: "price_1NQk5TLtGdPVhGLeicVfQ7mn0",
     unit_amount: 100 * 60,
     nickname: "Business Plan",
     offers: [
@@ -69,7 +69,7 @@ export const cloudSemiDedicated: Price[] = [
     ],
   },
   {
-    id: "price_1NQk5TLtGdPVhGLecVfQ7mn0",
+    id: "price_1NQk5TLtGdPVhGLeucVfQ7mn0",
     unit_amount: 100 * 90,
     nickname: "Organization Plan",
     offers: [
@@ -85,7 +85,7 @@ export const cloudSemiDedicated: Price[] = [
 
 export const cloudDedicated: Price[] = [
   {
-    id: "price_1NQk5TLtGdPVhGLecVfQ7mn0",
+    id: "price_1NQk5TLtGdPVhzGLecVfQ7mn0",
     unit_amount: 100 * 120,
     nickname: "Basic Plan",
     offers: [
@@ -97,7 +97,7 @@ export const cloudDedicated: Price[] = [
     ],
   },
   {
-    id: "price_1NQk5TLtGdPVhGLecVfQ7mn0",
+    id: "price_1NQtk5TLtGdPVhGLecVfQ7mn0",
     unit_amount: 100 * 130,
     nickname: "Business Plan",
     offers: [
@@ -110,7 +110,7 @@ export const cloudDedicated: Price[] = [
     ],
   },
   {
-    id: "price_1NQk5TLtGdPVhGLecVfQ7mn0",
+    id: "price_1NQk5TLtGdPVhGLercVfQ7mn0",
     unit_amount: 100 * 160,
     nickname: "Organization Plan",
     offers: [
@@ -126,7 +126,7 @@ export const cloudDedicated: Price[] = [
 
 export const webHosting: Price[] = [
   {
-    id: "price_1NQk5TLtGdPVhGLecVfQ7mn0",
+    id: "price_web_hosting_basic",
     unit_amount: 100 * 5,
     nickname: "Basic Plan",
     offers: [
@@ -138,11 +138,11 @@ export const webHosting: Price[] = [
       "1 Email-forwarders",
       "1 FTP-accounts",
       "1 MySQL-databases",
-      "admin Dashboard access"
+      "admin Dashboard access",
     ],
   },
   {
-    id: "price_1NQk5TLtGdPVhGLecVfQ7mn0",
+    id: "price_web_hosting_business",
     unit_amount: 100 * 10,
     nickname: "Business Plan",
     offers: [
@@ -158,7 +158,7 @@ export const webHosting: Price[] = [
     ],
   },
   {
-    id: "price_1NQk5TLtGdPVhGLecVfQ7mn0",
+    id: "price_web_hosting_organization",
     unit_amount: 100 * 15,
     nickname: "Organization Plan",
     offers: [

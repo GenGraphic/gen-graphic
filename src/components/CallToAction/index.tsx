@@ -19,7 +19,7 @@ const CallToAction = () => {
                   Whether you need expert consulting, a custom web/mobile app, or reliable hosting solutions — we’re here to make it happen. Our team specializes in building scalable, secure, and robust solutions to empower your business.
                 </p>
                 <Link
-                  href="/services"
+                  href="#contact"
                   className="inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]"
                 >
                   Start Your Project
