@@ -50,7 +50,7 @@
                 "users.read"
             ],
             "schedule": "",
-            "timeout": 15,
+            "timeout": 60,
             "enabled": true,
             "logging": true,
             "entrypoint": "src/main.js",
