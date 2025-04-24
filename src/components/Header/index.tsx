@@ -46,11 +46,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`ud-header left-0 top-0 z-40 flex w-full items-center ${
-          sticky
-            ? "shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
-            : "absolute bg-transparent"
-        }`}
+        className={`ud-header left-0 top-0 z-40 flex w-full items-center shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/50`}
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
@@ -61,16 +57,25 @@ const Header = () => {
                   sticky ? "py-2" : "py-5"
                 } `}
               >
-                <Image
-                  src="/images/logo/logo-noBKG.png"
-                  alt="logo"
-                  width={60}
-                  height={30}
-                  className="header-logo"
-                />
-                <span className="text-xl">
-                  GenGraphic
-                </span>
+                {theme === "dark" ? (
+                  <Image
+                    src="/images/logo/Logo-White.png"
+                    alt="logo dark"
+                    width={160}
+                    height={80}
+                    className="header-logo"
+                    priority
+                  />
+                ) : (
+                  <Image
+                    src="/images/logo/Logo-Black.png"
+                    alt="logo light"
+                    width={160}
+                    height={80}
+                    className="header-logo"
+                    priority
+                  />
+                )}
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
@@ -136,14 +141,10 @@ const Header = () => {
                             <Link
                               scroll={false}
                               href={menuItem.path}
-                              className={`ud-menu-scroll flex py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${
-                                sticky
-                                  ? "text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary"
-                                  : "text-body-color dark:text-white lg:text-white"
-                              } ${
-                                pathUrl === menuItem?.path &&
-                                sticky &&
-                                "!text-primary"
+                              className={`ud-menu-scroll flex py-2 text-base lg:inline-flex lg:px-0 lg:py-6 group-hover:text-primary ${
+                                pathUrl === menuItem.path
+                                  ? "text-primary"
+                                  : "text-dark dark:text-white"
                               }`}
                             >
                               {menuItem.title}
@@ -246,8 +247,8 @@ const Header = () => {
 
                     <svg
                       viewBox="0 0 23 23"
-                      className={`h-[30px] w-[30px] fill-current text-dark dark:hidden ${
-                        !sticky && pathUrl === "/" && "text-white"
+                      className={`h-[30px] w-[30px] fill-current dark:hidden ${
+                        !sticky && pathUrl === "/" ? "text-dark" : "text-dark"
                       }`}
                     >
                       <g clipPath="url(#clip0_40_125)">
